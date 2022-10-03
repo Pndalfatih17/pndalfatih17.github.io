@@ -167,41 +167,154 @@
                     <article class="blog_item">
                         <div class="blog_details">
                             <a class="d-inline-block" href="#">
-                                <h2>Create Data Base</h2>
+                                <h2>Fundamental Access Control</h2>
                             </a>
-                            <p>A. Membuat Nama Database</p>
+                            <p>• Pada keamanan informasi, kontrol akses merupakan hal yang  penting untuk memastikan kerahasiaan, integritas dan ketersediaan (CIA). Mengontrol siapa saja yang dapat mengakses ke sistem dan luasnya akses yang bisa dimiliki oleh pengguna dan sangat penting untuk memastikan dan mengamankan sistem dan data.</p>
+                            <p>• Contohnya seperti user root dapat memberikan atau membuat user yang dapat mengakses ke database kepada host yang diizinkan dan hak akses yang diberikan.</p>
+                            <p>• Contoh Pemberian Hak Akses Yang Sama seperti user Root Pada pandufa Untuk Mengakses Database.</p>
+                            <p>• Pembuattan User Baru.</p>
                         </div>
                         <div class="blog_item_img">
-                            <img class="card-img rounded-0" src="assets/img/blog/6.jpg" alt="">
+                            <img class="card-img rounded-0" src="assets/img/blog/18.jpg" alt="">
                         </div>
                     </article>
                     <article class="blog_item">
                         <div class="blog_details">
                             <a class="d-inline-block" href="#">
-                                <h2>B. Membuat Tabel Database</h2>
+                                <p>• Pembuktian Jika pandufa Hanya Bisa mengakses Databases yang di berikan Aksesnya saja  Serta Perbandingan antara </p>
+                                <p>• User Root Dengan pandufa </p>
+                                <p>• Root </p>
                             </a>
                         </div>
                         <div class="blog_item_img">
-                            <img class="card-img rounded-0" src="assets/img/blog/7.jpg" alt="">
+                            <img class="card-img rounded-0" src="assets/img/blog/19.jpg" alt="">
                         </div>
                     </article>
                     <article class="blog_item">
                         <div class="blog_details">
                             <a class="d-inline-block" href="#">
-                                <h2>C. Ip Pembeda antara dua server</h2>
+                                <p>• pandufa </p>
                             </a>
                         </div>
                         <div class="blog_item_img">
-                            <img class="card-img rounded-0" src="assets/img/blog/8.jpg" alt="">
+                            <img class="card-img rounded-0" src="assets/img/blog/20.jpg" alt="">
                         </div>
                     </article>
                     <article class="blog_item">
                         <div class="blog_details">
                             <a class="d-inline-block" href="#">
-                                <h2>D. Mengsetup bin address database</h2>
+                                <p>• Dikarenakan saya memberikan semua hak akses kepada pandufa, jadi untuk perintah create,read,update, dan delete bisa dijalankan oleh pandufa Layaknya user Root </p>
                             </a>
                         <div class="blog_item_img">
-                            <img class="card-img rounded-0" src="assets/img/blog/9.jpg" alt="">
+                            <img class="card-img rounded-0" src="assets/img/blog/21.jpg" alt="">
+                        </div>
+                    </article>
+                    <article class="blog_item">
+                        <div class="blog_details">
+                            <a class="d-inline-block" href="#">
+                                <h2>Mandatory Access Control</h2>
+                            </a>
+                            <p>• Pada kemanan komputer Mandatory (wajib) Access Control (MAC) merupakan jenis akses kontrol dimana sistem operasi atau pada database yang membatasi kemampuan subjek atau inisiator (user) untuk mengakses atau pada umumnya melakukan operasi pada objek atau target biasanya pada database objeknya adalah tabel, kolom, tampilan dan lainnya. Pada dasarnya keamanan ini dikendalikan secara terpusat oleh administrator yang mengelola keamanan, jadi user lain tidak memiliki kemampuan untuk mengganti kebijakan.</p>
+                            <p>• Semisalnya user yang tidak bisa mengakses database atau table yang telah ditentukan. Hanya root user yang bisa mengganti kebijakan.</p>
+                            <p>• Dengan perintahnya sebagai berikut.</p>
+                            <p>• Pandugg</p>
+                        </div>
+                        <div class="blog_item_img">
+                            <img class="card-img rounded-0" src="assets/img/blog/22.jpg" alt="">
+                        </div>
+                    </article>
+                    <article class="blog_item">
+                        <div class="blog_details">
+                            <a class="d-inline-block" href="#">
+                                <p>• Dalam Akses ini StaffR1 hanya bisa menggunakan perintah SELECT pada setiap tabel di database judulfilm;</p>
+                            </a>
+                        <div class="blog_item_img">
+                            <img class="card-img rounded-0" src="assets/img/blog/23.jpg" alt="">
+                        </div>
+                    </article>
+                    <article class="blog_item">
+                        <div class="blog_details">
+                            <a class="d-inline-block" href="#">
+                                <h2>Perintah Select pada user pandugg</h2>
+                                <h2>Discreationary Access Control</h2>
+                            </a>
+                            <p>• Kontrol akses diskresi (DAC) merupakan jenis kontrol akses yang ditentukan oleh Trusted Computer System Evaluation Criteria (TCSEC) sebagai sarana untuk membatasi akses ke objek berdasarkan identitas subjek atau kelompok mereka, dengan arti subjek dengan akses tertentu bisa meneruskan izin yang diberikan dan bisa meneruskan ke subjek lain ( kecuali ditahan oleh MAC).</p>
+                            <p>• Example</p>
+                            <p>• Saya memiliki 2 user dimana user 1 hanya untuk CRUD user 2 R .  </p>
+                            <p>• CRUD artinya Create, Read, Update, dan Delete.</p>
+                            <p>• Dan akan Mengunakan Engine(InnoDB), Dengan Chartset Default(utf8mb4)</p>
+                            <p>• Pandu</p>
+                        </div>
+                        <div class="blog_item_img">
+                            <img class="card-img rounded-0" src="assets/img/blog/24.jpg" alt="">
+                        </div>
+                    </article>
+                    <article class="blog_item">
+                        <div class="blog_details">
+                            <a class="d-inline-block" href="#">
+                                <p>• CREATE USER pandu@192.168.225.140 IDENTIFIED BY 'cek1';</p>
+                                <p>• GRANT CREATE,INSERT,SELECT,UPDATE,DELETE ON stacktools.* TO pandu@192.168.225.140;</p>
+                                <p>• Pandugg</p>
+                            </a>
+                        <div class="blog_item_img">
+                            <img class="card-img rounded-0" src="assets/img/blog/25.jpg" alt="">
+                        </div>
+                    </article>
+                    <article class="blog_item">
+                        <div class="blog_details">
+                            <a class="d-inline-block" href="#">
+                                <p>• CREATE USER StaffR2@192.168.225.137 IDENTIFIED BY 'cek2';</p>
+                                <p>• GRANT CREATE,INSERT,SELECT,UPDATE, ON stacktools.* TO pandugg@192.168.225.137</p>
+                            </a>
+                        <div class="blog_item_img">
+                            <img class="card-img rounded-0" src="#" alt="">
+                        </div>
+                    </article>
+                    <article class="blog_item">
+                        <div class="blog_details">
+                            <a class="d-inline-block" href="#">
+                                <h2>• StaffR1 CRUD Implementasi</h2>
+                                <p>• Implementasi Create dan Insert</p>
+                            </a>
+                        <div class="blog_item_img">
+                            <img class="card-img rounded-0" src="assets/img/blog/26.jpg" alt="">
+                        </div>
+                    </article>
+                    <article class="blog_item">
+                        <div class="blog_details">
+                            <a class="d-inline-block" href="#">
+                                <p>• Implementasi Update</p>
+                            </a>
+                        <div class="blog_item_img">
+                            <img class="card-img rounded-0" src="assets/img/blog/27.jpg" alt="">
+                        </div>
+                    </article>
+                    <article class="blog_item">
+                        <div class="blog_details">
+                            <a class="d-inline-block" href="#">
+                                <p>• Implementasi Create,Update,Select,dan Delete</p>
+                            </a>
+                        <div class="blog_item_img">
+                            <img class="card-img rounded-0" src="assets/img/blog/28.jpg" alt="">
+                        </div>
+                    </article>
+                    <article class="blog_item">
+                        <div class="blog_details">
+                            <a class="d-inline-block" href="#">
+                                <h2>• Pandugg Read Implementasi</h2>
+                                <p>• Implementasi Read</p>
+                            </a>
+                        <div class="blog_item_img">
+                            <img class="card-img rounded-0" src="assets/img/blog/29.jpg" alt="">
+                        </div>
+                    </article>
+                    <article class="blog_item">
+                        <div class="blog_details">
+                            <a class="d-inline-block" href="#">
+                                <p>• Dan Pembatasan Akses pada pandugg karna tidak di berikan Privilegesnya</p>
+                            </a>
+                        <div class="blog_item_img">
+                            <img class="card-img rounded-0" src="assets/img/blog/30.jpg" alt="">
                         </div>
                     </article>
                     
